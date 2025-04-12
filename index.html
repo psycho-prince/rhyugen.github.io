@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rhyugen | Hacker Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #0f0f0f;
+      color: #00ff88;
+      font-family: 'Courier New', monospace;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #00ff88;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+    .typing {
+      border-right: 2px solid #00ff88;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 3s steps(30, end) forwards, blink 0.75s step-end infinite;
+    }
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+    section {
+      margin: 40px 0;
+    }
+    ul { margin-top: 10px; }
+    a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .glow {
+      text-shadow: 0 0 5px #00ff88, 0 0 10px #00ff88;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="typing glow">Hi, I'm rhyugen</h1>
+    <p class="glow">Ethical Hacker | CTF Creator | Security Researcher</p>
+
+    <section>
+      <h2>About Me</h2>
+      <p>I’m a cybersecurity enthusiast focused on web app security, reverse engineering, and ethical hacking. I build CTF challenges, design honeypots, and contribute to the infosec community.</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Penetration Testing (Web & Logic Flaws)</li>
+        <li>OWASP ZAP, XSStrike, Nikto, SlowHTTPTest</li>
+        <li>Flask, Linux CLI, Docker</li>
+        <li>CTF Creation & Vulnerability Research</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>HxH Challenge:</strong> A hacker-style CTF challenge with shell access, hidden flags, SQL injection.</li>
+        <li><strong>Flask Honeypot:</strong> Fake PHP login interface for capturing attacker behavior.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:rhyugen@protonmail.com">rhyugen@protonmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/rhyugen" target="_blank">github.com/rhyugen</a></p>
+    </section>
+  </div>
+
+  <script>
+    // JS typing effect (optional enhancement if class .typing is reused dynamically)
+    // Already handled by CSS animation, but could enhance with JS in future
+  </script>
+</body>
+</html>
